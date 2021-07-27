@@ -1,0 +1,143 @@
+:root {
+    --light-dark: #1E2021;
+}
+
+body {
+    background-color: #111 !important;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #111;
+  }
+.timeline {
+    width: 80%;
+    min-height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline ul {
+    list-style: none;
+    ;
+}
+
+.timeline ul li {
+    padding: 20px;
+    background-color: var(--light-dark);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+.timeline ul li:first-child{
+    margin-top: 30px;
+}
+
+.timeline ul li:last-child {
+    margin-bottom: 0;
+}
+
+.timeline ul li h1 {
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.timeline ul li p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.date{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .timeline::before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: var(--light-dark);
+        left: 52%;
+        transform: translateX(-50%);
+    }
+    .timeline ul li {
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+
+    }
+
+    .timeline ul li:nth-child(odd) {
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+    }
+    .hideforhover{
+        display: none;
+    }
+    .timeline ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+    }
+
+    .timeline ul li::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .timeline ul li:nth-child(odd)::after {
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .timeline ul li:nth-child(even)::after {
+        transform: translate(-50%, 50%);
+        left: -30px;
+    }
+
+    .timeline ul li:hover:after {
+        background-color: var(--unik);
+    }
+    .date{
+        position: absolute;
+        top: -30px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        width:100% !important;
+        margin:0;
+        padding:0;
+    }
+    .timeline ul li,.timeline ul,.timeline{
+        width: 100%;
+        margin: 0;
+    }
+    .timeline ul li h2{
+font-size: rem;
+    }
+    .timeline ul li h1{
+        font-size: 1.5rem;
+    }
+}
+

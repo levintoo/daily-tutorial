@@ -1,0 +1,25 @@
+:root{
+    --unik: #854fee;
+    --white: #fff;
+    --joker-font: 'Bubblegum Sans', cursive;
+    --main-font: 'Roboto ', monospace;
+    --main-font-light: 'Roboto Mono', monospace;
+    --my-orange: #FFB200;
+    --lightblu: #36c99d23;
+    --black: #000;
+    --feintblack: #A7A7A7;
+}
+.navbar,.container,section{
+    right: 0;
+    z-index: 1;
+}
+.form-control{
+    border-radius: 0;
+    outline:none;
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+.mb-3>textarea{
+    border: 1px solid;
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Daily Portfolio</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top bg-light shadow-sm bg-body rounded ">
+        <div class="container-fluid">
+            <a class="navbar-brand small-screen-hidden">
+                <img src="img/logo.png" class="m-2 shadow  " width="40px" height="40px">
+            </a>
+            <h4 class="m-2">HOMEPAGE</h4>
+            <div class="d-flex">
+                <button id="home-btn" class="active m-2 btn " type="submit">HOME</button>
+                <button id="about-btn" class="m-2 btn " type="submit">ABOUT</button>
+                <button  id="services-btn"  class="m-2 btn " type="submit">SERVICES</button>
+                <button id="blog-btn" class="m-2 btn " type="submit">BLOG</button>
+                <a href="contact-me.html"><button id="contact-me-tbn" class="m-2 btn " type="submit">CONTACT ME</button></a>
+
+            </div>
+            <!-- <div class="dark-mode-items">
+                <img id="moon" src="img/modes/moon.png" class="m-2" width="30px" height="30px">
+                <img id="sun" src="img/modes/sun.png" class="m-2 collapse" width="30px" height="30px">
+        </div> -->
+        <!-- small navbar button-->
+        <div class="hideme">
+            <a class="navbar-brand menu-icon">
+                <a data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <img src="img/logo.png" class=" m-2 rgba(137, 43, 226, 0.295)-sm" width="40px" height="40px"> -->
+                    <i id="naigation-icon"  class="fas fa-bars"  class=" m-2 rgba(137, 43, 226, 0.295)-sm" width="40px" height="40px"></i>
+                </a>
+            </a>
+        </div>
+        </div>
+        <!-- small navbar itmes -->
+        <div class="hideme">
+            <div class="rounded-1 collapse" id="navbarToggleExternalContent">
+                <div class="p-4">
+                    <h5 class="d-flex flex-column text-white h4">
+                        <a class="m-1 links" href="index.html" type="submit">HOME</a>
+                        <a class="m-1 links" href="edu.html" type="submit">EDUCATION</a>
+                        <a class="m-1 links" href="contact-me.html" type="submit">CONTACT ME</a>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main area -->
+    <main class="site-main">
+
+        <section id="main-section"   class="site-banner">
+            <div  class="container">
+                <div class="row" >
+                    <div class="col-lg-6 col-md-12 site-title"  >
+                        <h3 class="title-text main-font fs-3 text-muted">Hey</h3>
+                        <h2 class="title-text text-uppercase main-font">I am levin</h2>
+                        <h4 class="title-text text-uppercase text-muted">Front End Web Developer</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <div class="main-buttons">
+                                    
+                                    <a href="files/levin-cv.pdf" download="levin-cv">
+                                        <button id="download-cv" target="_blank" class="m-2  btn shadow-sm btnunik active-2 btn"
+                                            type="submit">
+                                            GET MY CV</button></a>
+                                    <button id="hire-me" class="m-2  btn shadow-sm btn active " type="submit">HIRE
+                                        ME</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- about-us image is the main image -->
+                    <div class="col-lg-6 col-md-12 banner-image hov">
+                        <img src="img/about-us.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+           <div class="hov">
+            <img id="rot" class="floating-flash small-screen-hidden " src="img/light.png">
+            <img id="rot"  class="floating-bulb small-screen-hidden" src="img/light-bulb.png">
+           </div>
+        </section>
+        <!-- about me -->
+        <section id="about-me" class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 d-flex jusrtify-content-center align-items-center">
+                        <div class="about-image hov d-flex jusrtify-content-center align-items-center">
+                            <img src="img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span class="text-primary">Let me</span>
+                            <span class="text-muted">introduce</span>
+                            <span class="text-info">myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para text-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
+                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            </p>
+                            <p class="para text-muted">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here
+                            </p>
+                        </div>
+
+                      
+                            <button id="download-cv" target="_blank"  class="m-2  btn-lg shadow-sm active-2 btn" type="submit">
+                              <a href="edu.html">Chekout Education</a>  </button>
+                  
+                        <a href="files/levin-cv.pdf" target="_blank" download="levin-cv">
+                            <button id="download-cv" class="m-2  btn-lg shadow-sm btn" type="submit">
+                                DOWNLOAD CV</button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands -->
+        <section id="brands-area" class="brand-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="first-row row">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand ">
+                                    <img src="img/brands/logo1.png" alt="Brand-1 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo2.png" alt="Brand-2 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo3.png" alt="Brand-3 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo4.png" alt="Brand-4">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo5.png" alt="Brand-5 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo6.png" alt="Brand-6">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo7.png" alt="Brand-7 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo8.png" alt="Brand-8 ">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <div class="single-brand">
+                                    <img src="img/brands/logo9.png" alt="Brand-9">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="experience-area">
+                            <div class="d-flex flex-row years-area">
+                                <h1 class="p-3 big10">0</h1>
+                                <h2>
+                                    <span>Years</span>
+                                    <span>Experience</span>
+                                    <span>Working</span>
+                                </h2>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap call-area">
+                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                                <div class="call-now">
+                                    <a href="tel:+254700814223" id="call-link" class="main-font m-2 fs-3"
+                                        type="submit">Call Now</a>
+                                    <h4 class="m-2 py-2">(+254)-700-814-223</h4>
+                                </div>
+                            </div>
+                            <div class="bg-panel .d-sm-none .d-md-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- servics -->
+        <section id="services"  class="services-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center services-title">
+                        <h1 class="text-uppercase title-text text-muted">Services Offers</h1>
+                        <p class="para">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour
+                        </p>
+                    </div>
+                </div>
+                <div class="container services-list">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="img/services/s1.png" alt="Services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Wp developer</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="img/services/s2.png" alt="Services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">ux/ui desing</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="img/services/s3.png" alt="Services-3">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">web design</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="services">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="img/services/s4.png" alt="Services-4">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
+                                    <p class="card-text text-secondary">
+                                        Some quick example text to build on the card
+                                        title and make up
+                                        the bulk of the card's content.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- recent projecs -->
+        <section id="project-area" class="project-area">
+            <div class="container">
+                <div class="project-title pb-5">
+                    <h1 class="text-uppercase joker-font title-h1 ">Recently Done Project</h1>
+                
+                </div>
+
+                <div class="projects-nav">
+                    <button class="m-2 btn" type="submit" id="all">All</button>
+                    <button class="m-2 btn" type="submit" id="popular">Latest</button>
+                    <button class="m-2 btn" type="submit" id="latest">Popular</button>
+                    <button class="m-2 btn" type="submit" id="upcoming">Upcoming</button>
+                </div>
+                <div class="row grid">
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item upcoming" id="product-9">
+                        <div class="our-project">
+                            <div class="img">
+                                <a class="test-popup-link" href="img/portfolio/p9.jpg">
+                                    <img src="img/portfolio/p9.jpg" alt="portfolio-9" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Camera Lens</h4>
+                                <span class="text-secondary">Upcoming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- subscribe section -->
+        <section id="subscribe-section" class="container bg-white shadow-sm footer rounded justify-content-center align-items-center d-flex flex-column">
+            <p class="joker-font fs-2">Subscribe and recieve updates of my new projects</p>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <button type="submit" class="btn btn active">Subscribe</button>
+            </form>
+        </section>
+        </section>
+
+
+
+        <section class="footer-main footer justify-content-center align-items-center d-flex flex-column">
+            <p class="joker-font fs-1">FOLLOW ME</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/lev.kipz/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/levin_too/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/Tooklevin"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="main-font-light m-2">Copyright &copy; 2021 All rights reserved | This website is made with by levin
+            </p>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="js/reviews.js"></script>
+    <script src="https://kit.fontawesome.com/1ec1af48dd.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

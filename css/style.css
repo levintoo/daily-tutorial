@@ -1,0 +1,498 @@
+:root {
+    --unik: #854fee;
+    --white: #fff;
+    --joker-font: 'Bubblegum Sans', cursive;
+    --main-font: 'Roboto ', monospace;
+    --main-font-light: 'Roboto Mono', monospace;
+    --my-orange: #FFB200;
+    --lightblu: #36c99d23;
+    --black: #000;
+    --feintblack: #A7A7A7;
+  }
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: var(--main-font);
+
+}
+
+#main-section{
+    background-color: rgba(238, 238, 238, 0.212);
+
+}
+.about-image img{
+    width:25rem;
+}
+#download-cv a{
+    text-decoration: none;
+    color:var(--black);
+}
+.papers{
+    position: absolute;
+    bottom: -55vh;
+    width: 42rem;
+    height: 46.5rem;
+    left: -17rem;
+    animation: papers var(--time);
+
+}
+#rot{
+    transition: 1s, left 1s;
+}
+#rot:hover{
+    transform: rotate(90deg);
+    transition: 1s, left 1s;
+    cursor: pointer;
+}
+.hov img:hover{
+    transform: translateX(-5%);
+    transition: 1s, left 1s;
+    cursor: pointer;
+}
+.hov img{
+    transform: translateX(0%);
+    transition: 1s, left 1s; 
+}
+body{
+    width: 100%;
+
+}
+.joker-font{
+    font-family: var(--joker-font);
+}
+.main-font{
+    font-family: var(--main-font);
+}
+.main-font-light{
+    font-family: var(--main-font-light);
+}
+.floating-flash{
+    position: fixed;
+    width: 4.375rem;
+    height: 4.375rem;
+    transform: rotate(90deg);
+    top: 20vh;
+    left: 20%;
+}
+.animetop{
+    animation-name: breath-animation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+   }
+   @keyframes breath-animation {
+    
+   }
+.floating-bulb{
+    position: absolute;
+    width: 8.125rem;
+    height: 6.25rem;
+    top: 100vh;
+    left: 0;
+}
+/* first section styling */
+.floating-flash{
+    position: absolute;
+    width: 4.375rem;
+    height: 4.375rem;
+    transform: rotate(90deg);
+    top: 20vh;
+    left: 20%;
+}
+.floating-bulb{
+    position: absolute;
+    width: 8.125rem;
+    height: 6.25rem;
+    top: 100vh;
+    left: 20%;
+}
+.active{
+   color: var(--unik) !important;
+   border: 1px solid rgba(137, 43, 226, 0.295) !important;
+}
+.btn:hover{
+    color: var(--white) !important;
+    background-color: var(--unik) !important;
+    cursor: pointer;
+    box-shadow: 0 5px 5px 0 rgba(58, 58, 58, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.btn{
+    font-size: 6.25rem;
+    font-weight: 900;
+}
+.btnunik{
+    color: var(--white) !important;
+    background-color: var(--unik) !important;
+}
+.active-2:hover{
+    color: var(--unik) !important;
+    background-color: var(--white) !important;
+   border: 1px solid var(--unik) !important;
+   cursor: pointer;
+}
+ /* hideen small screen items */
+ .links {
+    text-decoration: none;
+    color: var(--white);
+ }
+ .collapse a{
+     color: rgb(3, 3, 97) ;
+ }
+ .hideme{
+     display: none !important;
+ }
+
+/* Banner Area */ 
+
+/* .site-main .site-banner {
+    background: url() no-repeat 0% 50%;
+} */
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 15vw;
+    background: var(--black);
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+    
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 25rem;
+}
+
+
+/* Start About Area */ 
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/ 60px var(--joker-font);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+
+/* Start Brand Area */ 
+
+.site-main .brand-area{
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--feintblack);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--feintblack);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+    filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area .years-area{
+    /* background: url() no-repeat 45px 20px; */
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    right: 130px; top: 245%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--main-font);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/30px var(--main-font);
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10rem;
+}
+.big10{
+    color: var(--unik);
+    font-size: 3rem;
+}
+/* End Brand Area */ 
+
+/* Services Area */ 
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 1rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    
+
+}
+
+/* recent projects Area */ 
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--main-font);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--main-font);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+/* reviews */
+
+.underline {
+    height: 0.25rem;
+    width: 5rem;
+    background: var(--unik);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* Footer Area */ 
+.footer{
+    width: 100%;
+    height: 70vh;
+}
+.footer-main{ 
+    margin-top: 20px;
+    background: linear-gradient(to bottom right, #33ccff4b 1%, #ff99cc57 100%);
+}
+.social-media i{
+  width: 50px;
+  height: 50px;
+}
+.review-box{
+    transition: all 3s ease;
+}
+
+
+/* beginning of responsiveness */
+
+/* if the viewport is equal to 340px or less than that */ 
+@media only screen and (max-width: 340px){
+    .header_area .main-menu .navbar,
+    .header_area .main-menu .navbar .navbar-brand,
+    .site-main .subscribe-us-area .subscribe .subscribe-title,
+    .site-main .services-area
+    {
+        padding: 2%;
+        margin: 0%;
+    }
+    
+    body{
+        background: linear-gradient(to top left, #33ccff41 0%, #ff99cc28 100%, #33ccff41 10%, #ff99cc28 300%, #33ccff41 20%, #ff99cc28 60%);
+    }
+    .hideme{
+        display: block !important;
+    }
+    .navbar form ,.navbar  button, .small-screen-hidden{
+        display: none ;
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 15rem    !important;
+    }
+
+    .site-main > .services-area .services{
+        width: 13rem;
+    }
+
+}
+
+
+/* if the viewport is equal to 792px or less than that */ 
+@media only screen and (max-width: 792px){
+    body{
+        background: linear-gradient(to top left, #33ccff41 0%, #ff99cc28 100%, #33ccff41 10%, #ff99cc28 300%, #33ccff41 20%, #ff99cc28 60%);
+    }
+    .hideme{
+        display: block !important;
+    }
+    .navbar form ,.navbar button, .small-screen-hidden{
+        display: none ;
+    }
+
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .brand-area .experience-area .years-area{
+        padding-left: 1%;
+        width: 49%;
+    }
+
+    .site-main .brand-area .experience-area .bg-panel{
+        margin-left: 30%;
+        width: 80%;   
+    }
+
+    .site-main .brand-area .experience-area .call-area{
+        padding-left: 3%;
+    }
+
+    .site-main .project-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+
+    .site-main .about-area .about-title p{
+        padding: 0%;
+    }
+
+    .site-main .subscribe-us-area .subscribe form .input-textbox input{
+        width: 20rem;
+        margin: 5%;
+    }
+}
+/* if the viewport is equal to 991px or less than that */ 
+@media only screen and (max-width: 991px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+    .review-content h2,.review-content p{
+        text-align: center;
+    }
+    .review-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1,p{
+        text-align: center;
+    }
+    body{
+        background: linear-gradient(to top left, #33ccff41 0%, #ff99cc28 100%, #33ccff41 10%, #ff99cc28 300%, #33ccff41 20%, #ff99cc28 60%);
+    }
+    .hideme{
+        display: block !important;
+    }
+    .navbar form ,.navbar button, .small-screen-hidden{
+        display: none ;
+    }
+
+}
+
+
+
+/* if the viewport is equal to 1910px or less than that */ 
+@media only screen and (max-width: 1910px){
+    .header_area .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .brand-area,
+    .site-main .services-area .services-title,
+    .site-main .about-area{
+        padding: 3% 4%;
+    }
+
+
+}
